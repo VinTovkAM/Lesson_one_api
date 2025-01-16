@@ -1,8 +1,9 @@
 import requests
 
 
-cities = ['Череповец','london','svo']
-for number in cities:
-    url = f'https://wttr.in/{number}?mnqTM&lang=ru'
-    response = requests.get(url)
+cities = ['Череповец','Лондон','аэропорт Шереметьево']
+params = {"lang": "ru", "MTnq": ""}
+for city in cities:
+    url = f'https://wttr.in/{city}'
+    response = requests.get(url, params=params)
     print(response.text)
