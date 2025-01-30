@@ -1,10 +1,15 @@
 import requests
 
 
-cities = ['Череповец','Лондон','сво']
-params = {"lang": "ru", "MTnq": ""}
-for city in cities:
-    url = f'https://wttr.in/{city}'
-    response = requests.get(url, params=params)
-    response.raise_for_status()
-    print(response.text)
+def main():
+    cities = ['Череповец','Лондон','SVO']
+    params = {"lang": "ru", "MTnq": ""}
+    for city in cities:
+        url = f'https://wttr.in/{city}'
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        print(response.text)
+
+
+if __name__ == '__main__':
+    main()
