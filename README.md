@@ -1,39 +1,39 @@
-# Скрипт для получения погоды
+# Script for getting the weather
 
-[wttr.in](https://wttr.in/) — это веб-сервис для получения информации о погоде. Этот скрипт отправляет GET-запросы на wttr.in с заданными параметрами для получения форматированных данных о погоде для заранее определённого списка мест.
+[wttr.in](https://wttr.in/) is a web service for getting weather information. This script sends GET requests to wttr.in with preset parameters to get formatted weather data for a predefined list of locations.
 
-## Установка
+## Installation
 
-1. Убедитесь, что Python установлен на вашем компьютере. Вы можете скачать его с python.org.
+1. Make sure that Python is installed on your computer. You can download it from python.org.
 
-2. Установите библиотеку requests, если она ещё не установлена:
+2. Install the requests library, if it is not already installed:
 ```
 bash
 pip install requests
 ```
-## Использование
+## Usage
 
-1. Определите список мест в переменной `cities`. По умолчанию в список входят:
+1. Define a list of places in the `cities` variable. By default, the list includes:
 
-* Череповец
-* Лондон
-* сво
+* Cherepovets
+* London
+* SVO
 
-2. Запустите скрипт:
+2. Run the script:
 ```
 bash
-python script_name.py
+python main.py
 ```
-3. Скрипт получит и отобразит информацию о погоде для каждого места на русском языке.
+3. The script will receive and display weather information for each location in Russian.
 
-## Дополнительно
+## Additional information
 
-1. Убедитесь, что у вас есть активное подключение к Интернету при запуске скрипта.
+1. Make sure that you have an active internet connection when running the script.
 
-2. Скрипт использует метод `response.raise_for_status()` для обработки ошибок HTTP.
+2. The script uses the `response.raise_for_status()` method to handle HTTP errors.
 
-3. Вы можете настроить список мест и параметры в соответствии с вашими потребностями.
+3. You can customize the list of locations and parameters according to your needs.
 
-## Цель проекта
+## The purpose of the project
 
-Данный проект был разработан в образовательных целях в рамках онлайн-курса для веб-разработчиков на платформе [dvmn.org](https://dvmn.org/). Он демонстрирует навыки работы с API, обработку данных и создание инструмента для сравнения информации с разных источников.
+This project was developed for educational purposes as part of an online course for web developers on the platform [dvmn.org](https://dvmn.org/). He demonstrates API skills, data processing, and creating a tool for comparing information from different sources.
