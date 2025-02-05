@@ -2,7 +2,7 @@ import requests
 
 
 def main():
-    cities = ['Череповец','Лондон','SVO']
+    cities = ['Cherepovets','London','SVO']
     params = {"lang": "ru", "MTnq": ""}
     for city in cities:
         url = f'https://wttr.in/{city}'
