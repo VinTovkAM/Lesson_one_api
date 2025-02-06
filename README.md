@@ -6,10 +6,9 @@
 
 1. Make sure that Python is installed on your computer. You can download it from python.org.
 
-2. Install the requests library, if it is not already installed:
-```
-bash
-pip install requests
+2. Install the requests library(ver: 2.32.3), if it is not already installed:
+```bash
+pip install requests==2.32.3
 ```
 ## Usage
 
@@ -20,8 +19,7 @@ pip install requests
 * SVO
 
 2. Run the script:
-```
-bash
+```bash
 python main.py
 ```
 3. The script will receive and display weather information for each location in Russian.
