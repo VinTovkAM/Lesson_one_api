@@ -6,9 +6,9 @@
 
 1. Make sure that Python is installed on your computer. You can download it from python.org.
 
-2. Install the requests library(ver: 2.32.3), if it is not already installed:
+2. Install the necessary requirements:
 ```bash
-pip install requests==2.32.3
+pip install -r requirements.txt
 ```
 ## Usage
 
